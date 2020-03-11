@@ -596,7 +596,7 @@ namespace FI.PlateReader.Gen4.TIA
                             ReadDataLED();
                             ReadDataRowMotor();
                             ReadDataColumnMotor();
-                            ReadDataSpectrometer();
+                            //ReadDataSpectrometer();
 
                             // move user data to settings which are used in the initialize functions.
                             UserDataSettings();
@@ -1757,9 +1757,9 @@ namespace FI.PlateReader.Gen4.TIA
             ColumnMotorData.pinfo = pinfo;
 
             // Get the Handle
-            linescanHandle = Versa_getPBusHandle();
-            bool chk4 = CheckError(Versa_getPBusInfo(&pinfo));
-            linescanData.pinfo = pinfo;
+            //linescanHandle = Versa_getPBusHandle();
+            //bool chk4 = CheckError(Versa_getPBusInfo(&pinfo));
+            //linescanData.pinfo = pinfo;
 
             return true;
         }
